@@ -28,7 +28,7 @@ def print_whales(data):
 
                 for m in missions:
                     is_match = (
-                        #m.get("PrimaryObjective") == "Mining Expedition" and
+                        m.get("PrimaryObjective") == "Mining Expedition" and
                         m.get("SecondaryObjective") not in ["Hollomite", "Dystrum"] and
                         "Core Corruption" in m.get("MissionWarnings", []) and
                         m.get("MissionMutator") == "Double XP" and
